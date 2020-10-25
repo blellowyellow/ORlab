@@ -4,13 +4,15 @@ Labosi iz otvorenog racunarstva
 
 Contributor: Luka Cigula
 
-current version: v1.0
+Current version: v1.0
 
-language: croatian
+Language: croatian
 
 Publication date: 25.10.2020
 
-license: 
+License: 
 CC0 1.0 Universal
 
 --Skup podataka nekog izmisljenog vrta, specifikacija bilja te njihovog polozaja
+
+Last modification: 25.10.2020
