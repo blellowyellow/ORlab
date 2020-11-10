@@ -1,0 +1,270 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "Vrt",
+    "description": "Skup podataka o nekom izmišljenom vrtu",
+    "default": [],
+    "examples": [
+        [
+            {
+                "sifra": 1,
+                "naziv": "patlidžan",
+                "wiki": "Eggplant",
+                "latnaziv": "Solanum melongena",
+                "bojaploda": "ljubičasta",
+                "izgledsjemena": "male unutarnje sjemenke",
+                "jestivo": "da",
+                "sadnja": "kasno proljeće",
+                "berba": "kasno ljeto",
+                "tipsadnje": "presadnice",
+                "Mjesto": [
+                    {
+                        "nazivmjesta": "mali plastenik",
+                        "vrstamjesta": "plastenik"
+                    },
+                    {
+                        "nazivmjesta": "gredice 1",
+                        "vrstamjesta": "gredica"
+                    }
+                ]
+            },
+            {
+                "sifra": 2,
+                "naziv": "jagoda",
+                "wiki": "Strawberry",
+                "latnaziv": "Fragaria × ananassa",
+                "bojaploda": "crvena",
+                "izgledsjemena": "male vanjske sjemenke",
+                "jestivo": "da",
+                "sadnja": "ljeto",
+                "berba": "kasno proljeće",
+                "tipsadnje": "presadnice",
+                "Mjesto": [
+                    {
+                        "nazivmjesta": "veliki plastenik",
+                        "vrstamjesta": "plastenik"
+                    }
+                ]
+            }
+        ]
+    ],
+    "additionalItems": true,
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "sifra": 1,
+                        "naziv": "patlidžan",
+                        "wiki": "Eggplant",
+                        "latnaziv": "Solanum melongena",
+                        "bojaploda": "ljubičasta",
+                        "izgledsjemena": "male unutarnje sjemenke",
+                        "jestivo": "da",
+                        "sadnja": "kasno proljeće",
+                        "berba": "kasno ljeto",
+                        "tipsadnje": "presadnice",
+                        "Mjesto": [
+                            {
+                                "nazivmjesta": "mali plastenik",
+                                "vrstamjesta": "plastenik"
+                            },
+                            {
+                                "nazivmjesta": "gredice 1",
+                                "vrstamjesta": "gredica"
+                            }
+                        ]
+                    }
+                ],
+                "required": [
+                    "sifra",
+                    "naziv",
+                    "wiki",
+                    "latnaziv",
+                    "bojaploda",
+                    "izgledsjemena",
+                    "jestivo",
+                    "sadnja",
+                    "berba",
+                    "tipsadnje",
+                    "Mjesto"
+                ],
+                "properties": {
+                    "sifra": {
+                        "$id": "#/items/anyOf/0/properties/sifra",
+                        "type": "integer",
+                        "title": "Šifra",
+                        "description": "Šifra biljke",
+                        "default": 0,
+                        "examples": [
+                            1
+                        ]
+                    },
+                    "naziv": {
+                        "$id": "#/items/anyOf/0/properties/naziv",
+                        "type": "string",
+                        "title": "Naziv",
+                        "description": "Hrvatski naziv biljke",
+                        "default": "",
+                        "examples": [
+                            "patlidžan"
+                        ]
+                    },
+                    "wiki": {
+                        "$id": "#/items/anyOf/0/properties/wiki",
+                        "type": "string",
+                        "title": "Wiki",
+                        "description": "Wiki handle wikipedia stranice biljke",
+                        "default": "",
+                        "examples": [
+                            "Eggplant"
+                        ]
+                    },
+                    "latnaziv": {
+                        "$id": "#/items/anyOf/0/properties/latnaziv",
+                        "type": "string",
+                        "title": "Latinski naziv",
+                        "description": "Latinski naziv biljke",
+                        "default": "",
+                        "examples": [
+                            "Solanum melongena"
+                        ]
+                    },
+                    "bojaploda": {
+                        "$id": "#/items/anyOf/0/properties/bojaploda",
+                        "type": "string",
+                        "title": "Boja ploda",
+                        "description": "Grubo opisana boja ploda biljke",
+                        "default": "",
+                        "examples": [
+                            "ljubičasta"
+                        ]
+                    },
+                    "izgledsjemena": {
+                        "$id": "#/items/anyOf/0/properties/izgledsjemena",
+                        "type": "string",
+                        "title": "Izgled sjemena",
+                        "description": "Kratak opis izgleda i lokacije sjemena",
+                        "default": "",
+                        "examples": [
+                            "male unutarnje sjemenke"
+                        ]
+                    },
+                    "jestivo": {
+                        "$id": "#/items/anyOf/0/properties/jestivo",
+                        "type": "string",
+                        "title": "Jestivo",
+                        "description": "Mogućnost sigurne konzumacije biljke",
+                        "default": "",
+                        "examples": [
+                            "da"
+                        ]
+                    },
+                    "sadnja": {
+                        "$id": "#/items/anyOf/0/properties/sadnja",
+                        "type": "string",
+                        "title": "Sadnja",
+                        "description": "Doba godine u koje se biljka sadi",
+                        "default": "",
+                        "examples": [
+                            "kasno proljeće"
+                        ]
+                    },
+                    "berba": {
+                        "$id": "#/items/anyOf/0/properties/berba",
+                        "type": "string",
+                        "title": "Berba",
+                        "description": "Doba godine u koje se skupljaju plodovi ili sama biljka",
+                        "default": "",
+                        "examples": [
+                            "kasno ljeto"
+                        ]
+                    },
+                    "tipsadnje": {
+                        "$id": "#/items/anyOf/0/properties/tipsadnje",
+                        "type": "string",
+                        "title": "Tip sadnje",
+                        "description": "Način sadnje ili presađivanja",
+                        "default": "",
+                        "examples": [
+                            "presadnice"
+                        ]
+                    },
+                    "Mjesto": {
+                        "$id": "#/items/anyOf/0/properties/Mjesto",
+                        "type": "array",
+                        "title": "Mjesto",
+                        "description": "Položaj biljke u nekom izmišljenom vrtu",
+                        "default": [],
+                        "examples": [
+                            [
+                                {
+                                    "nazivmjesta": "mali plastenik",
+                                    "vrstamjesta": "plastenik"
+                                },
+                                {
+                                    "nazivmjesta": "gredice 1",
+                                    "vrstamjesta": "gredica"
+                                }
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "$id": "#/items/anyOf/0/properties/Mjesto/items",
+                            "anyOf": [
+                                {
+                                    "$id": "#/items/anyOf/0/properties/Mjesto/items/anyOf/0",
+                                    "type": "object",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [
+                                        {
+                                            "nazivmjesta": "mali plastenik",
+                                            "vrstamjesta": "plastenik"
+                                        }
+                                    ],
+                                    "required": [
+                                        "nazivmjesta",
+                                        "vrstamjesta"
+                                    ],
+                                    "properties": {
+                                        "nazivmjesta": {
+                                            "$id": "#/items/anyOf/0/properties/Mjesto/items/anyOf/0/properties/nazivmjesta",
+                                            "type": "string",
+                                            "title": "Naziv mjesta",
+                                            "description": "Kolokvijalan naziv mjesta gdje je biljka posađena",
+                                            "default": "",
+                                            "examples": [
+                                                "mali plastenik"
+                                            ]
+                                        },
+                                        "vrstamjesta": {
+                                            "$id": "#/items/anyOf/0/properties/Mjesto/items/anyOf/0/properties/vrstamjesta",
+                                            "type": "string",
+                                            "title": "Vrsta mjesta",
+                                            "description": "Vrsta medija ili lokacije u koji je biljka posađena",
+                                            "default": "",
+                                            "examples": [
+                                                "plastenik"
+                                            ]
+                                        }
+                                    },
+                                    "additionalProperties": true
+                                }
+                            ]
+                        }
+                    }
+                },
+                "additionalProperties": true
+            }
+        ]
+    }
+}
