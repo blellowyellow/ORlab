@@ -4,7 +4,7 @@ Labosi iz otvorenog racunarstva
 
 Contributor: Luka Cigula
 
-Current version: v1.0
+Current version: v2.0
 
 Language: croatian
 
